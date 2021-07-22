@@ -1,0 +1,22 @@
+section.sidebar {
+    position: fixed;
+  background-color: #f3f3f3;
+  width: 70px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  overflow-y: auto;
+  z-index: 999;
+  /* -webkit-transition: left 300ms;
+  -o-transition: left 300ms;
+  transition: left 300ms; */
+  display: flex;
+  align-items: center;
+  }
+  .Sidebar-Icon .SDIcon {
+    color: gray;
+    margin-top: 20px;
+  }
+  .Sidebar-Icon li {
+    list-style-type: none;
+  }

@@ -1,0 +1,35 @@
+.cart-container{
+
+}
+.cart-container .item{
+    display: flex;
+    flex-direction: column;
+
+}
+.cart-container .item .menu{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-container .item .sub-menu{
+    display: flex;
+    justify-content: space-between;
+}
+.cart-container .summary{
+    margin-top: 100px;
+    
+
+}
+.pay-button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    width: 98%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    margin-top: 20px;
+    padding: 14px 60px;
+  }
