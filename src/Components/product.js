@@ -1,5 +1,6 @@
 export const product = [{
     menuType: 'Drinks',
+    subMenus: ['Wine', 'Beer', 'SoftDrink'],
     menus: [{
       category: 'Wine',
       name: 'Bordeaux',
@@ -129,6 +130,7 @@ export const product = [{
     }]
   }, {
     menuType: 'Food',
+    subMenus: ['Veg', 'NonVeg'],
     menus: [{
       category: 'Veg',
       name: 'Pinto Posole',
@@ -192,6 +194,7 @@ export const product = [{
     }]
   }, {
     menuType: 'Dessert',
+    subMenus: ['Cakes'],
     menus: [{
       category: 'Cakes',
       name: 'Funfetti cake',

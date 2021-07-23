@@ -1,15 +1,28 @@
 import '../CSS/dropdown.css'
+import {useContext, useState} from 'react';
+import { BillContext} from './AppContext';
+
+
 function Dropdown (){
-    return <div class="select">
-    <select id="standard-select">
-      <option value="Option 1">Option 1</option>
-      <option value="Option 2">Option 2</option>
-      <option value="Option 3">Option 3</option>
-      <option value="Option 4">Option 4</option>
-      <option value="Option 5">Option 5</option>
-      <option value="Option length">Option that has too long of a value to fit</option>
+ 
+  const bill = useContext(BillContext);
+  console.log('dddddddd', bill);
+  const handleChange = (category)=>{
+   bill.setMenu(category);
+  }
+    return (<div class="select">
+    <select id="standard-select" value = {bill.selectedMenu} onChange = {(e)=>handleChange(e.target.value)}>
+     
+      {bill.selectedCategory.subMenus.map((selectedCategory, index)=>{
+        return(
+          <option value = {selectedCategory}>
+            {selectedCategory}
+          </option>
+        );
+      })}
     </select>
     <span class="focus"></span>
-  </div>
+  </div>);
+    
 }
 export default Dropdown;    
