@@ -13,6 +13,7 @@
     margin-left: 20px;
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
   }
   .container .product-list .cart-container .price {
     padding-top: 10px;

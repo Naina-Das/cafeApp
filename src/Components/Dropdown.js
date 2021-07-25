@@ -6,7 +6,6 @@ import { BillContext} from './AppContext';
 function Dropdown (){
  
   const bill = useContext(BillContext);
-  console.log('dddddddd', bill);
   const handleChange = (category)=>{
    bill.setMenu(category);
   }

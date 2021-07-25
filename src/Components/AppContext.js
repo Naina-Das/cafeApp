@@ -6,15 +6,14 @@ export const BillProvider = ({ children }) => {
   const [quantityIndex, setQuantity] = useState(-1);
   const [selectedTab, setTab] = useState('Drinks')
   const [selectedCategory,setCategory] = useState(product[0]);
-  const initialData = product[0].menus.filter(menu => menu.category === "Wine");
-  // const [filterData, setData] = useState(initialData);
+  const [data, setData] = useState(product);
   const [selectedMenu, setMenu] = useState("Wine");
   const [cartData, setCartdata] = useState({});
   
   return (
     <BillContext.Provider
       value={{
-        data : product, 
+        data,setData, 
         selectedCategory,setCategory,  
         selectedMenu, setMenu,
         cartData, setCartdata,

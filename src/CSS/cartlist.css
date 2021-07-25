@@ -10,6 +10,9 @@
     display: flex;
     justify-content: space-between;
 }
+.cart-container .item .menu  div{
+    font-weight: 700;
+}
 .cart-container .item .sub-menu{
     display: flex;
     justify-content: space-between;
